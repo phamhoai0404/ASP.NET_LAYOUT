@@ -8,7 +8,7 @@
 	background-color: rgba(60, 60, 60, 0.8);
 	overflow: hidden;
 	position: relative;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 #hero .carousel,
 #hero .carousel-inner,
@@ -40,6 +40,9 @@
 	#hero .container {
 		margin-left: 50px;
 		margin-right: 50px;
+	}
+	#hero{
+		width: 100%;
 	}
     
 }
@@ -115,29 +118,22 @@
 }
 
 @media (max-width: 1024px) {
-	
     #hero{
         height: 400px;
-       
+		width: 100%;
     }
-    #hero img{
-        width: 100%;
-        height: 100%;
-    }
-	
 }
 @media (max-width: 992px) {
 	
     #hero{
         height: 300px;
+		width: 100%;
        
     }
-    #hero img{
-        width: 100%;
-        height: 100%;
-    }
-	
+
+   	
 }
+
 
 @media (max-width: 768px) {
 	#hero h2 {
@@ -145,17 +141,36 @@
 	}
 	#hero{
         height: 300px;
+		width: 100%;
     }
 	#hero .carousel-control-next-icon,
 	#hero .carousel-control-prev-icon {
 		display: none;
-	}
-    #hero img{
-        width: 100%;
-        height: 100%;
-    }
-   
+	} 
 }
+@media (max-width: 540px) {
+	
+	#hero{
+        height: 200px;
+		width: 100%;
+		margin-top: 70px;
+    }	
+}
+@media (max-width: 360px) {
+	
+	#hero{
+        height: 170px;
+		width: 100%;
+		margin-top: 70px;
+    }	
+}
+@media (max-width: 768px) {
+	
+	#hero{
+		margin-top: 70px;
+    }	
+}
+
 @media (min-width: 1024px) {
 	#hero .carousel-control-prev,
 	#hero .carousel-control-next {
@@ -168,8 +183,8 @@
 	#hero .carousel-control-prev-icon {
 		display: none;
 	}
-    #hero img{
-        width: 100%;
-        height: 100%;
-    }
+	#hero{
+		width: 100%;
+	}
+   
 } 
