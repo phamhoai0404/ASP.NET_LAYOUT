@@ -6,12 +6,40 @@
 	padding: 20px 30px;
 	transition: all 0.3s;
 	min-height: 80vh;
+	background-color:#FAFAFA ;
+}
+#main .content{
+	background-color:#FFFFFF;
+	padding-top:20px;
 }
 @media (max-width: 1199px) {
 	#main {
 		padding: 20px;
 	}
 }
+/* ------------------------**/
+.breadcrumb {
+	font-size: 14px;
+	font-family: "Nunito", sans-serif;
+	color: #899bbd;
+	font-weight: 600;
+	padding-left: 20
+  }
+  .breadcrumb a {
+	color: #899bbd;
+	transition: 0.3s;
+  }
+  .breadcrumb a:hover {
+	color: blue;
+  }
+  .breadcrumb .breadcrumb-item::before {
+	color: #899bbd;
+  }
+  .breadcrumb .active {
+	color: #51678f;
+	font-weight: 600;
+  }
+
 
 /*--------------------------------------------------------------
 # Page Title
@@ -25,31 +53,57 @@
 	font-weight: 600;
 	color: #012970;
 }
-/*-----------------*/
-.back-to-top {
-	position: fixed;
-	visibility: hidden;
-	opacity: 0;
-	right: 15px;
-	bottom: 15px;
-	z-index: 99999;
-	background: #4154f1;
-	width: 40px;
-	height: 40px;
-	border-radius: 4px;
-	transition: all 0.4s;
-  }
-  .back-to-top i {
-	font-size: 24px;
-	color: #fff;
+
+.card-title {
+	padding: 0px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #012970;
+	font-family: "Poppins", sans-serif;
+}
+.card-body {
+	padding: 20px 20px 20px 20px;
+	width: 65% !important;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+	margin: auto;
+	box-shadow:  10px 10px 5px #AAA;
+	background: #F8FBEF;
+}
+
+.card-img-overlay {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.card-body .card-icon {
+	font-size: 32px;
 	line-height: 0;
-  }
-  .back-to-top:hover {
-	background: #6776f4;
-	color: #fff;
-  }
-  .back-to-top.active {
-	visibility: visible;
-	opacity: 1;
-  }
-  
+	width: 64px;
+	height: 64px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	
+}
+.card-body:hover {
+	background:#FBF5EF;
+	box-shadow:  11px 11px 6px #AAA;
+}
+.total-revenue .card-icon {
+	color: red;
+	background: #F8E0E0;
+}
+.total-products .card-icon{
+	color: #D7DF01;
+	background:#F2F5A9;
+}
+.total-products-sold .card-icon {
+	color: green;
+	background: #BCF5A9;
+}
+.total-accounts .card-icon {
+	color: blue;
+	background: #A9E2F3;
+}
