@@ -13,7 +13,7 @@ namespace LayoutNhom8.Areas.Admin.Controllers
         {
             return View();
         }
-        public ActionResult QuanlyDanhmucSanpham()
+        /*public ActionResult QuanlyDanhmucSanpham()
         {
             return View();
         }
@@ -36,6 +36,6 @@ namespace LayoutNhom8.Areas.Admin.Controllers
         public ActionResult Dangnhap()
         {
             return View();
-        }
+        }*/
     }
 }

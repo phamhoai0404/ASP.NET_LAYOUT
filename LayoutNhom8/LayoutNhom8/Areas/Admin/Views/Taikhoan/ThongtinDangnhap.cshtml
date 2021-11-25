@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Xin chào, Nhóm 8";
     ViewBag.Link = "Thông tin đăng nhập";
-    ViewBag.Name = "ThongtinDangnhap";
+    ViewBag.Name = "null";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -33,13 +33,12 @@
 <div class="row mb-4">
     <div class="col-lg-12 text-center">
         <button type="button" class="btn btn-danger">
-            <a href="@Url.Action("Dangnhap","Home")" style="color: white;">
+            <a href="@Url.Action("Index","Dangnhap")" style="color: white;">
                 <i class="bi bi-box-arrow-right" style="font-size: 20px;"></i>
                 Đăng xuất
             </a>
         </button>
 
     </div>
-
 </div>
 

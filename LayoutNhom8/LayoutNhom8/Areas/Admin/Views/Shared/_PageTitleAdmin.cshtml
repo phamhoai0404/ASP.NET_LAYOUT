@@ -8,11 +8,20 @@
                 </a>
             </li>
             <li class="breadcrumb-item active">
-                <a href="@Url.Action( @ViewBag.Name ,"Home")">
-       
-                    @ViewBag.Link
-                </a>
-                
+                @if (@ViewBag.Link != "Thông tin đăng nhập")
+                {
+                    <a href="@Url.Action( "Index" , ViewBag.Name )">
+                        @ViewBag.Link
+                    </a>
+                }
+                else
+                {
+                    <a href="#">
+                        @ViewBag.Link
+                    </a>
+                }
+
+
             </li>
         </ol>
     </nav>

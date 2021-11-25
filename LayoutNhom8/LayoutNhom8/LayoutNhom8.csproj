@@ -126,7 +126,12 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\DangnhapController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DanhmucSanphamController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DonhangController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SanphamController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TaikhoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -162,17 +167,17 @@
     <Content Include="Areas\Admin\Assets\vendor\bootstrap\js\bootstrap.js.map" />
     <Content Include="Areas\Admin\Assets\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\QuanlyDanhmucSanpham.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_HeaderAdmin.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_SidebarAdmin.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_FooterAdmin.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\QuanlyDonhang.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\QuanlySanpham.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\QuanlyTaikhoan.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\ThongtinDangnhap.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Dangnhap.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_TitleHeadAdmin.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_PageTitleAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhmucSanpham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Donhang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Sanpham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Taikhoan\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Dangnhap\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Taikhoan\ThongtinDangnhap.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
